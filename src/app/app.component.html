@@ -1,10 +1,17 @@
 <div  [ngClass]="{'darkMode' : isDarkModeEnable}">
     <app-app-header (toggleThemeColor)="onSwitchTheme($event)" [isSelectedDarkMode]="isSwichToDarkMode"></app-app-header>
-    <app-app-search *ngIf="!isCountryMoreDetialEnable" (getSearchTerm)="onGetSearchTerm($event)"
-    [isSelectedDarkMode]="isSwichToDarkMode">
-    </app-app-search>
+    <div class="filterClass">
+   
+            <app-app-search *ngIf="!isCountryMoreDetialEnable" (getSearchTerm)="onGetSearchTerm($event)"
+            [isSelectedDarkMode]="isSwichToDarkMode">
+            </app-app-search>
+   
+
     <app-app-filter *ngIf="!isCountryMoreDetialEnable" (getSelectedRegionName)="onGetRegionName($event)"
     [isSelectedDarkMode]="isSwichToDarkMode" ></app-app-filter>
+
+
+    </div>
     <app-app-item-list *ngIf="!isCountryMoreDetialEnable" [selectedRegion]="regionName" [selectedName] = "searchName" 
     (enableCountryMoreDetail) = "onEnableCountryMoreDetail($event)" [isSelectedDarkMode]="isSwichToDarkMode"></app-app-item-list>
     <router-outlet></router-outlet>

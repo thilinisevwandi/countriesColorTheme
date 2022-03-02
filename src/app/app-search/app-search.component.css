@@ -16,3 +16,19 @@ input{
     background-color: hsl(209, 23%, 22%);
     color:  hsl(0, 0%, 100%);
 }
+@media only screen and (min-width: 600px) {
+    .mainContainer{
+        width: 300px;
+        margin: 50px;
+        padding:10px;
+        background-color: #fff;
+    }
+    .darkMode{
+        background-color: hsl(209, 23%, 22%);
+        color:  hsl(0, 0%, 100%);
+    }
+    .darkMode>input{
+        background-color: hsl(209, 23%, 22%);
+        color:  hsl(0, 0%, 100%);
+    }
+}

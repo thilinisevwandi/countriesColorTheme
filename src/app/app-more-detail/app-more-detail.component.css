@@ -77,3 +77,88 @@
     background-color: hsl(209, 23%, 22%);
     color:  hsl(0, 0%, 100%);    
 } */
+
+@media only screen and (min-width: 600px) {
+    .backBtnContainer{
+        margin: 3%;
+        padding: 5px;
+        background-color: #fff;
+        width: 5%;
+        text-align: center;
+        cursor: pointer;
+    }
+    .detailContainer{
+        margin: 3%;
+        padding: 2%;
+        /* background-color: #fff; */
+    }
+
+    .subContent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .itemflag{
+        width: 40%;
+    }
+    .itemDesc{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    img{
+        width: 350px;
+    }
+    .itemName{
+        width: 100%;
+    }
+    .itemNativeName{
+        width: 50%;
+    }
+    .itemPopulation{
+        width: 50%;
+    }
+    .itemRegion{
+        width: 50%;
+    }
+    .itemSubRegion{
+        width: 50%;
+    }
+    .itemCapital{
+        width: 50%;
+    }
+    .itemTopLevelDomain{
+        width: 50%;
+    }
+    .itemCurrencies{
+        width: 50%;
+    }
+    .itemLanguages{
+        width: 50%;
+    }
+    .borderCountries{
+     
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .borderHeader{
+        width: 25%;
+    }
+    .borderCountryContainer{
+        width: 70%;
+    }
+    .darkMode{
+        color:  hsl(0, 0%, 100%);
+    }
+    .darkModeborderCountry{
+        background-color: hsl(209, 23%, 22%);
+        color:  hsl(0, 0%, 100%);
+    }
+    .darkModeBackBtn{
+        background-color: hsl(209, 23%, 22%);
+        color:  hsl(0, 0%, 100%);
+    }
+}

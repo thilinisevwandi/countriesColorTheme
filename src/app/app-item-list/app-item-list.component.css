@@ -1,6 +1,7 @@
 .appItemListMainContainer{
     margin: 5%;
     background-color:rgb(243, 240, 240);
+    display: block;
 }
 .itemDetailContainer{
     background-color:  #fff;
@@ -45,4 +46,34 @@
     color:  hsl(0, 0%, 100%);
     margin-top: 5%;
     padding-bottom: 5%;
+}
+@media only screen and (min-width: 600px) {
+    .appItemListMainContainer{    
+      background-color:rgb(243, 240, 240);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }  
+    .itemDetailContainer{
+        background-color:  #fff;      
+        width: 23%;   
+        margin-top: 0%;    
+        margin-bottom: 5%; 
+    } 
+    .darkMode{
+        background-color: hsl(207, 26%, 17%);
+        color:  hsl(0, 0%, 100%);
+    }
+    .darkMode>.itemDetailContainer{
+        background-color: hsl(209, 23%, 22%);
+        color:  hsl(0, 0%, 100%);
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+    img{
+        height: 150px;
+    }
 }
