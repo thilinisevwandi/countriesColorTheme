@@ -1,0 +1,27 @@
+<div class="appItemListMainContainer" [ngClass]="{'darkMode':isDarkModeEnable}">
+    <div *ngFor="let country of countries" class="itemDetailContainer" (click)="loadCountryMoreDetail(country)">
+        <div class="itemflag">
+            <img [src] = "country.flags.png" width="100%" height="250px">
+        </div>
+        <div class="itemName">
+            {{country?.name?.common}}
+        </div>
+        <div class="itemPopulation">
+           <b> Population: </b>{{country.population | number}}
+        </div>
+        <div class="itemRegion">
+            <b>Region: </b>{{country.region}}
+        </div>
+        <div class="itemCapital" >
+            <b>Capital:</b> <span *ngFor="let cityName of country.capital">
+                {{cityName}}
+            </span>
+        </div>
+    </div>
+    <div *ngIf="!isLoadingData && !countries.length" style="text-align: center;">
+        No Data Found
+    </div>
+</div>
+<div *ngIf="isLoadingData">
+    <app-app-loader></app-app-loader>
+</div>

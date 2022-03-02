@@ -1,0 +1,79 @@
+.backBtnContainer{
+    margin: 5%;
+    padding: 2%;
+    background-color: #fff;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+}
+.detailContainer{
+    margin: 5%;
+    padding: 2%;
+    /* background-color: #fff; */
+}
+.itemName{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.itemNativeName{
+    padding-bottom: 3%;
+}
+.itemPopulation{
+    padding-bottom: 3%;
+}
+.itemRegion{
+    padding-bottom: 3%;
+}
+.itemSubRegion{
+    padding-bottom: 3%;
+}
+.itemCapital{
+    padding-bottom: 5%;
+}
+.itemTopLevelDomain{
+    padding-bottom: 3%;
+}
+.itemCurrencies{
+    padding-bottom: 3%;
+}
+.itemLanguages{
+    padding-bottom: 3%;
+}
+.borderCountries{
+    margin-top: 5%;
+}
+.borderHeader{
+    padding-bottom: 5%;
+    width: 100%;
+}
+.borderCountryContainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    align-items: flex-start;
+}
+.borderCountry{
+    background-color: #fff;
+    width: 25%;
+    padding: 2%;
+    margin-bottom: 3%;
+    margin-right: 2%;
+}
+.darkMode{
+    color:  hsl(0, 0%, 100%);
+}
+.darkModeborderCountry{
+    background-color: hsl(209, 23%, 22%);
+    color:  hsl(0, 0%, 100%);
+}
+.darkModeBackBtn{
+    background-color: hsl(209, 23%, 22%);
+    color:  hsl(0, 0%, 100%);
+}
+/* 
+.darkMode>.borderCountry{
+    background-color: hsl(209, 23%, 22%);
+    color:  hsl(0, 0%, 100%);    
+} */

@@ -1,0 +1,23 @@
+.appFilterMainContainer{
+    margin: 5%;
+    padding: 5%;
+    background-color: #fff;
+    width: 50%;
+}
+select{
+    border: 0;
+    width: 100%;
+
+}
+option{
+    border: 0;
+}
+
+.darkMode{
+    background-color: hsl(209, 23%, 22%);
+    color:  hsl(0, 0%, 100%);
+}
+.darkMode>select{
+    background-color: hsl(209, 23%, 22%);
+    color:  hsl(0, 0%, 100%);
+}

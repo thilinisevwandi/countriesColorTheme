@@ -1,0 +1,6 @@
+<div class="appFilterMainContainer" [formGroup]="regionForm" [ngClass]="{'darkMode':isDarkModeEnable}">
+    <label for="region">Filter by Region</label>
+    <select name="region" formControlName="regionName" (change)="getSelectedRegion()">
+        <option *ngFor="let region of regionList.region " value="{{region}}">{{region}}</option>
+    </select>
+</div>

@@ -1,0 +1,48 @@
+.appItemListMainContainer{
+    margin: 5%;
+    background-color:rgb(243, 240, 240);
+}
+.itemDetailContainer{
+    background-color:  #fff;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+.itemDetailContainer:hover{
+    cursor: pointer;
+}
+.itemName{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+}
+.itemPopulation{
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 5%;
+}
+.itemRegion{
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 5%;
+}
+.itemCapital{
+    padding: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 5%;
+}
+
+.darkMode{
+    background-color: hsl(207, 26%, 17%);
+    color:  hsl(0, 0%, 100%);
+}
+.darkMode>.itemDetailContainer{
+    background-color: hsl(209, 23%, 22%);
+    color:  hsl(0, 0%, 100%);
+    margin-top: 5%;
+    padding-bottom: 5%;
+}

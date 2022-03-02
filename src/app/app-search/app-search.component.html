@@ -1,0 +1,5 @@
+<div class="mainContainer" [ngClass]="{'darkMode':isDarkModeEnable}">
+    <span style="margin-right: 3%;"><i class="fa fa-search" aria-hidden="true"></i></span>
+    <input placeholder="search for a country..." (input)="getCountryBySearchParam($event)" [disabled]="issearchInputDisable">
+</div>
+
